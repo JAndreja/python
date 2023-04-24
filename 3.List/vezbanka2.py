@@ -62,3 +62,10 @@ for num in nums:
         list2.sort()
 print(list1)
 print(list2)
+
+
+names = ["Andreja", "Radica", "Kaja", "Maza"]
+
+friends = (", ".join(names))
+
+print(f"I'm friend with: {friends}")

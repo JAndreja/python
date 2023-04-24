@@ -53,11 +53,15 @@ print("===============")
 print("** List Methods ( append, extend, insert ) **")
 num_list=[1,3,5,7,9]
 print(f"List: {num_list}")
+# can only append one argument
 num_list.append(20)
-num_list.append([30,40,50])
+#  output  [ 1,3,5,7,9, [30,40,50]] adedd as a one argument    
+num_list.append([30,40,50])   
 print(f"List after appending a number: {num_list}")
-num_list.extend([21,34,56,78])
+# can added as many you want argument
+num_list.extend([21,34,56,78])    
 print(f"List after extending with numbers : {num_list}")
+# insert an item at a given position
 num_list.insert(2,"Hello")
 print(f"List after insert values: {num_list}")
 
