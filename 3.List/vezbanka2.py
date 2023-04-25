@@ -69,3 +69,46 @@ names = ["Andreja", "Radica", "Kaja", "Maza"]
 friends = (", ".join(names))
 
 print(f"I'm friend with: {friends}")
+
+
+list_num = [ 2 ,4 , 6, 8]
+
+duble_num = [ x*2 for x in list_num]
+duble_num2 = [ str(x*2) for x in list_num]
+
+print(duble_num)
+print(type(duble_num))
+print(duble_num2)
+print(type(duble_num2))
+
+
+numbers = [ 1,2,3,4,5,6]
+
+double = [num*2 for num in numbers]
+print(double)
+
+double_even = [ num*2 for num in numbers if num % 2 ==0]
+print(double_even)
+
+change_odd = [ num*2 if num%2 == 0  else 'odd' for num in numbers]
+
+print(change_odd)
+
+
+l1= [1,2,3,4]
+l2= [3,4,5,6]
+
+answer = [ num for num in l1 if num in l2 ]
+print(answer)
+
+names = [ "Elie" , "Tim" , "Matt"]
+
+answer2 = [ name[::-1].lower() for name in names]
+print(answer2)
+
+answer3 = [ num for num in range(1,101) if num % 12 == 0]
+print(answer3)
+
+start_string = "amazing"
+answer4 = [  l for l in start_string if l not in ("a","e","i","o","u") ]
+print(answer4)
