@@ -112,3 +112,50 @@ print(answer3)
 start_string = "amazing"
 answer4 = [  l for l in start_string if l not in ("a","e","i","o","u") ]
 print(answer4)
+
+
+answer5 = [ name[0] for name in names ]
+print(answer5)
+
+l3 = [ 1,2,3,4,5,6]
+
+answer6 = [ num for num in l3 if num %2 == 0]
+print(answer6)
+
+
+nested_list = [ [1,2,3], [4,5,6], [7,8,9] ]
+
+for x in nested_list:
+    print(x)
+    for y in x:
+        print(y)
+
+i = 0
+
+while i < len(nested_list):
+    print(nested_list[i])
+    i+=1
+
+i=0
+
+i=0
+while i < len(nested_list):
+     print(f"Index {i}: {nested_list[i]}")
+     sub_list=nested_list[i]
+     j=0
+     while j < len(sub_list):
+         print(f"Sub_index {j}: {sub_list[j]}")
+         j += 1
+     i +=1
+
+nested_list2 = [ [100, 200, 300] , [ 400, 500, 600 ] , [700, 800 , 900 ]]
+[[print(val) for val in i] for i in nested_list2]
+
+nested_num=[[1,3,5],[2,4,6],[7,9,11],[8,10,12]]
+[[print(val) for val in i] for i in nested_num]
+
+print([["X" if num % 2 != 0 else "O" for num in range(1,4)] for val in range(1,4)])
+
+
+answer8 = [[num for num in range(0,3)] for x in range(0,3)]
+print(answer8)
