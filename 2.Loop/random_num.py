@@ -5,7 +5,7 @@ i = 0  # i should be incremented by one each iteration
 
 
 while number != 5:
-   i += 1
    number = randint(1,10)
+   i += 1
    print(f"Iteration {i}: Number {number}")
 print(f"Bingo:{number}")
