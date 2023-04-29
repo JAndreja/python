@@ -1,72 +1,58 @@
-names_dict = { "name": "Andreja",
-                "surname": "Jovanovski",
-                "age": "45",
-                "own_cat": False
-                }
+person = {
+    "name" : "Andreja",
+    "surname" : "Jovanovski",
+    "age" : "47",
+    "birthyear": "1976"
+}
+print(person)
 
-print(names_dict)
-print(type(names_dict))
-print("-----------------")
-print(names_dict.keys())
-print(type(names_dict.keys()))
-print("-----------------")
-print(names_dict.values())
-print(type(names_dict.values()))
-print("-----------------")
-print(names_dict.items())
-print(type(names_dict.items()))
+person1 =  dict ( name = "Radica",
+                  surname = "Jovanovski",
+                  age = "43",
+                  birthyear = "1980" )
+print(person1)
 
-d1 =dict( a=1 , b=2, c=3)
-d2 = d1.copy()
-print(d2)
-print(d1 is d2)
-print(d1 is not d2)
 
-for key in names_dict.keys():
+person2 = dict ([('name','Kaja'),
+                 ('surname','Jovanovski'),
+                 ('age', '11'),
+                 ( 'birthyear', '2011')])
+print(person2)
+
+
+print(f"{person['name']} {person['surname']}")
+print(person["name"])
+print(person1["age"])
+print(person2["birthyear"])
+
+for val in person.values():
+    print(val)
+
+for key in person.keys():
     print(key)
+
+for key, val in person.items():
+    #print(keys + ":" + val)
+     print(f"{key}:{val}")
+
+
+new_user = {}.fromkeys(['name', 'score', 'email'], "unknown")
+print(new_user)
+
+
+
+from random import choice 
+food = choice(["cheese pizza", "quiche","morning bun","gummy bear","tea cake"]) 
+bakery_stock = {
+    "almond croissant" : 12,
+    "toffee cookie": 3,
+    "morning bun": 1,
+    "chocolate chunk cookie": 9,
+    "tea cake": 25
+}
+
+if food in bakery_stock:
+    print(f"{food}: {bakery_stock[food]} left")
+else:
+    print("We don't make that")
     
-for value in names_dict.values():
-    print(value)
-    
-for k,v in names_dict.items():
-    print(f"{k}:{v}")
-print( "Andreja" in names_dict.values())
-print( "Radica" in names_dict.values())
-
-print( "name" in names_dict.keys())
-print( "color" in names_dict.keys())
-
-print( "name" in names_dict)
-print("******************************************************************")
-print("******************************************************************")
-print()
-
-dict3={}.fromkeys( "a", "1")
-print(dict3)
-
-dict4 = {}.fromkeys( [ "a" ,"b"], ["1","2"])
-print(dict4)
-
-get_dict=dict(a=1 , name='Andreja', favorite_number= 45,dog_owner = True)
-print(get_dict.get('name'))
-
-for k in get_dict.keys():
-    print(get_dict.get(k))
-    
-list1 =["a","b","c"]
-list2 = [1,2,3]
-
-# res ={}
-# for key in list1:           
-#     for value in list2:
-#       res[key] = value
-#       list2.remove(value)
-#       break
-# print(res)
-
-res1 = {list1[i]:list2[i] for i in range(0,len(list2))}
-print(res1)
-
-person = [["name", "Jared"], ["job", "Musician"], ["city", "Bern"]]
-solution = { p[0]:p[1] for p in person}
-print(solution)
