@@ -65,7 +65,7 @@ def add1(a , b=1):
 #print(add1())  # ne raboti bidejki ne e vnesen vrednost za a
 print(add1(2))
 
-# Keyword Arguments
+# KEYWORD ARGUMENTS
 # When you invoke a function and use an = you are making a keyword argument
 
 def full_name(first, last):
