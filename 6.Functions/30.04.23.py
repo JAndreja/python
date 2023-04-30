@@ -45,3 +45,22 @@ print(square(4))
 print(square(8))
 square_of_10 = square(10)
 print(square_of_10)
+
+
+def sum(a,b):
+    return a+b
+
+def mult(c,d):
+    return c*d
+
+def sum_of_all(a,b,c,d):
+    result = sum(a,b) + mult(c,d)
+    return result
+
+def sum_of_all_2(a,b):
+    sum_num = sum(a,b)
+    multi_num = mult(a,b)
+    return sum_num + multi_num
+
+print(sum_of_all(2,8,5,3))
+print(sum_of_all_2(2,8))
