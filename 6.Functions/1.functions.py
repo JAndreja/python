@@ -5,8 +5,6 @@
 
 #first function 
 
-
-
 def say_hi():
     print('Hi!')
 
@@ -38,9 +36,9 @@ print(name())
 
 # function with paramethars 
 # with one parameter
-def hello_name(name):
+def hello_name(name):             # "name" here is called PARAMETER 
     return f"Hello {name}"
-print(hello_name('Andreja'))
+print(hello_name('Andreja'))      #  Here is called ARGUMENT
 
 def square(x):
     return x*x
