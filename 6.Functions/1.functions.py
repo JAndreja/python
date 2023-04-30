@@ -86,7 +86,7 @@ def say_hello1():
     name1 = 'Andreja'
     return f'Hello {name1}'
 print(say_hello1())
-#(name1) # NameError
+#print(name1)  #(name1) # NameError
 
 # Global 
 

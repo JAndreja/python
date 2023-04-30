@@ -80,8 +80,3 @@ print(sum_of_all_5(5,5,5,5))
 def sum_of_all_6( a,b ,fn):
      return fn(a,b)
 print(sum_of_all_6(5,4,sub))
-
-
-
-
-
