@@ -48,19 +48,21 @@ print(square_of_10)
 
 
 def sum(a,b):
-    return a+b
+    return a+b  
 
-def mult(c,d):
-    return c*d
+def mult(c,d):   
+    return c*d   
 
 def sum_of_all(a,b,c,d):
     result = sum(a,b) + mult(c,d)
     return result
 
 def sum_of_all_2(a,b):
-    sum_num = sum(a,b)
-    multi_num = mult(a,b)
-    return sum_num + multi_num
+    return sum(a,b) +mult(a,b)
 
-print(sum_of_all(2,8,5,3))
+def sum_of_all_3(a,b):  
+    return a + b
+
+print(sum_of_all(2,8,2,5))
 print(sum_of_all_2(2,8))
+print(sum_of_all_3(sum(2,8),mult(2,5)))
