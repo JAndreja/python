@@ -53,15 +53,18 @@ print("===============")
 print("** List Methods ( append, extend, insert ) **")
 num_list=[1,3,5,7,9]
 print(f"List: {num_list}")
-# can only append one argument
+#APPEND#
+# can only append one argument (add a new element to the end of a list)
 num_list.append(20)
 #  output  [ 1,3,5,7,9, [30,40,50]] adedd as a one argument    
 num_list.append([30,40,50])   
 print(f"List after appending a number: {num_list}")
+#EXTEND#
 # can added as many you want argument
 num_list.extend([21,34,56,78])    
 print(f"List after extending with numbers : {num_list}")
-# insert an item at a given position
+#INSERT#
+# insert an item at a given position  (add a new element at a position in a list.)
 num_list.insert(2,"Hello")
 print(f"List after insert values: {num_list}")
 
@@ -71,12 +74,14 @@ print("* List Methods ( clear , pop , remove ) **")
 print("---------------------------")
 name_list=["andreja","radica","kaja"]
 print(f"List before clearing: {name_list}")
+#CLEAR#
 name_list.clear()
 print(f"List after clearing: {name_list}")
 print("---------------------------")
 name_list=["andreja","radica","kaja"]
 print(f"List before pop: {name_list}")
-print("Removed: " + name_list.pop())  # remove last element
+#POP#  to remove an element from a list and return that element.
+print("Removed: " + name_list.pop())  
 print(f"List after pop with not specified index position(remove last element) : {name_list}")
 print("---------------------------")
 name_list=["andreja","radica","kaja"]
@@ -86,6 +91,7 @@ print(f"List after pop with specified index position : {name_list}")
 print("---------------------------")
 name_list=["andreja","radica","kaja","andreja","radica","kaja"]
 print(f"List before remove: {name_list}")
+#REMOVE# to remove an element from a list.
 name_list.remove("andreja")
 print(f"List after remove the first item in list with value 'Andreja' : {name_list}")
 
