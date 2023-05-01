@@ -1,5 +1,6 @@
 # the syntax
 # [__ for __ in __]
+# [output_expression for element in list]
 
 num = [1,2,3]
 print([ x*10 for x in num ])
