@@ -32,3 +32,4 @@ print(first_tuple.count(3))
 #index method
 print(names.index("Andreja"))
 print(names.index("Kaja"))
+
