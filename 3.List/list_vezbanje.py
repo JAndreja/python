@@ -70,3 +70,42 @@ name1 = "andreja"
 
 name_upper = f"{name1[0].upper()}{name1[1:]}"
 print(name_upper)
+
+
+square = []
+for i in range(10):
+    square.append(i*i)
+print(square)
+
+new_list = [ i*i for i in range(10)]
+print(new_list)
+
+
+names = ["Andreja", "Radica", "Kaja"]
+
+name_uppercase = [ name[0].upper() + name[1:-1] + name[-1].upper() for name in names]
+print(name_uppercase)
+
+numb = [1,2,3,4,5]
+print(numb)
+
+num_string = [ str(num) for num in numb]
+print(num_string)
+
+
+even_num = [ num for num in range(11) if num % 2 == 0]
+print(even_num)
+
+change_odd = [ num*2 if num %2 ==0 else '*' for num in range(1,11)]
+print(change_odd)
+
+
+first_char= [ char[0].upper() for char in [ "Andreja", "Radica", "Kaja"]]
+print(first_char)
+
+
+list1 = [1,2,3,4]
+list2 = [3,4,5,6]
+
+answer =[num for num in list1 if num in list2]
+print(answer)
