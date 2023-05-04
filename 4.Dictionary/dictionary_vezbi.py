@@ -25,3 +25,16 @@ print('Macedonia'in country_capital.keys())
 
 print('Skopje' in country_capital.values())
 print('Rome' in country_capital.values())
+
+
+delete_dict = {"a":"1", "b":"2" , "c":"3"}
+
+delete_dict.clear()
+print(delete_dict)
+
+copy_dict = {"a":"1", "b":"2" , "c":"3"}
+clone = copy_dict.copy()
+print(clone)
+
+print(f"a:{clone.get('a')}")
+print(f"d: {clone.get('d')}")
