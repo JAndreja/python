@@ -62,3 +62,4 @@ print(math2(2,3,2,3, fun2))
 def math3(fn1 = fun1 , fn2=fun2):
     return fn1 * fn2
 print(math3(fun1(1,2),fun2(2,5)))
+
