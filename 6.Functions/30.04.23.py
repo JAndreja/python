@@ -1,52 +1,5 @@
-def say_hi():
-    print("Hi!")
 
-say_hi()
-
-
-def sum():
-    return 9+9
-results = sum()
-print(results)
-
-
-def multi():
-    return 3*3
-print(multi())
-
-
-from random import randint
-def check():
-    r = randint(1,30)
-    if r > 15:
-        return f'number is {r}: BOOM'
-    else:
-        return f'number is {r}: AHHHH'
-print(check())
-
-
-result = []
-def generate_evens():
-    for x in range(1,50):
-        if x % 2 == 0:
-            result.append(x)
-    return result
-print(generate_evens())
-
-
-def say_hi(name, surname):
-    print(f"Hi {name} {surname}")
-
-say_hi("Andreja" , "Jovanovski")
-
-def square(num):
-    return num*num
-print(square(4))
-print(square(8))
-square_of_10 = square(10)
-print(square_of_10)
-
-
+#######################################################################################################
 def sum(a,b):
     return a+b  
 
