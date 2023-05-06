@@ -5,7 +5,6 @@ def sum_all_num(*nums):
     total =0
     for num in nums:
         total += num
-        num += 1
     return total
 
 print(sum_all_num(1,2,3))
