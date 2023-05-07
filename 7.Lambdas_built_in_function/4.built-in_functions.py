@@ -1,5 +1,5 @@
 # ** all **
-# Return True if all elements of the iterable are truthy (or if the iterable is empty
+# Return True if all elements of the iterable are truthy (or if the iterable is empty)
 
 list1=all([1,2,3,4,5])
 list2=all([0,1,2,3,4])
