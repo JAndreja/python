@@ -15,7 +15,7 @@
 # Deck  should have an instance method called deal_card  which uses the _deal  method to deal a single card from the deck and return that single card.
 # Deck  should have an instance method called deal_hand  which accepts a number and uses the _deal  method to deal a list of cards from the deck and return that list of cards.
 #**************************************************************************************************
-
+from random import shuffle
 class Card:
     def __init__(self,value,suit):
         self.value = value
