@@ -56,13 +56,13 @@ print(f"List: {num_list}")
 #APPEND# # can only append one argument (add a new element to the end of a list)
 num_list.append(20)
 #  output  [ 1,3,5,7,9, [30,40,50]] adedd as a one argument    
-num_list.append([30,40,50])   
+num_list.append([30,40,50])    # type: ignore
 print(f"List after appending a number: {num_list}")
 #EXTEND#   can added as many you want argument
 num_list.extend([21,34,56,78])    
 print(f"List after extending with numbers : {num_list}")
 #INSERT#  insert an item at a given position  (add a new element at a position in a list.)
-num_list.insert(2,"Hello")
+num_list.insert(2,"Hello") # type: ignore
 print(f"List after insert values: {num_list}")
 
 #list methods ( clear, pop,remove)
