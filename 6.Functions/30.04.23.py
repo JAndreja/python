@@ -65,8 +65,8 @@ def marks_avg1(marks):
     avg = sum(marks)/len(marks) 
     return avg
     
-def compute_grade1( marks, avg = marks_avg1):
-        avg_marks = avg(marks)
+def compute_grade1( marks, fn_mark_avg = marks_avg1):
+        avg_marks = fn_mark_avg(marks)
         print(f"Average marks is : {avg_marks}")
         if avg_marks >= 80:
             return "Your grade is: A"
@@ -77,5 +77,47 @@ def compute_grade1( marks, avg = marks_avg1):
         else:
             return "Your grade is: F"
           
-marks = [ 40,50,30,40,68]
+marks = [ 80,60,70,89,68]
 print(compute_grade1(marks))
+
+#########################################################################################
+
+marks2 = [ 40,40,40,40,40]
+def marks_avg2(m):
+    avg = sum(m)/len(m) 
+    return avg
+    
+def compute_grade2(fn_mark_avg = marks_avg2(marks2)):
+        print(f"Average marks is : {fn_mark_avg}")
+        if fn_mark_avg >= 80:
+            return "Your grade is: A"
+        elif fn_mark_avg >= 60:
+            return "Your grade is: B"
+        elif fn_mark_avg >= 50:
+            return "Your grade is: C"
+        else:
+            return "Your grade is: F"
+          
+print(compute_grade2())
+
+#########################################################################################
+
+user_input = input("Enter numbers separated by commas: ")
+grades = user_input.split(",")
+grades = [ int(grade) for grade in grades]
+def marks_avg3(m):
+    avg = sum(m)/len(m) 
+    return avg
+    
+def compute_grade3(fn_mark_avg = marks_avg3(grades)):
+        print(f"Average marks is : {fn_mark_avg}")
+        if fn_mark_avg >= 80:
+            return "Your grade is: A"
+        elif fn_mark_avg >= 60:
+            return "Your grade is: B"
+        elif fn_mark_avg >= 50:
+            return "Your grade is: C"
+        else:
+            return "Your grade is: F"
+          
+print(compute_grade3())
