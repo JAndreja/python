@@ -103,8 +103,11 @@ print(compute_grade2())
 #########################################################################################
 
 user_input = input("Enter numbers separated by commas: ")
+
 grades = user_input.split(",")
 grades = [ int(grade) for grade in grades]
+
+
 def marks_avg3(m):
     avg = sum(m)/len(m) 
     return avg
