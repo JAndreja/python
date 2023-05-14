@@ -1,5 +1,6 @@
 
 #######################################################################################################
+"""
 def sum(a,b):
     return a+b  
 
@@ -33,3 +34,48 @@ print(sum_of_all_5(5,5,5,5))
 def sum_of_all_6( a,b ,fn):
      return fn(a,b)
 print(sum_of_all_6(5,4,sub))
+"""
+#####################################################################################
+
+def marks_avg(marks):
+    avg = sum(marks)/len(marks)
+    return avg
+    
+def compute_grade(average_marks):
+    if average_marks >= 80:
+        return "Your grade is: A"
+    elif average_marks >= 60:
+        return "Your grade is: B"
+    elif average_marks >= 50:
+        return "Your grade is: C"
+    else:
+        return "Your grade is: F"
+
+marks = [ 80,85,85,75,95]
+
+avg_marks= marks_avg(marks)
+print(f"Average marks is : {avg_marks}")
+
+grade = compute_grade(avg_marks)
+print(f"The grade is : {grade}")
+
+##############################################################################################
+
+def marks_avg1(marks):
+    avg = sum(marks)/len(marks) 
+    return avg
+    
+def compute_grade1( marks, avg = marks_avg1):
+        avg_marks = avg(marks)
+        print(f"Average marks is : {avg_marks}")
+        if avg_marks >= 80:
+            return "Your grade is: A"
+        elif avg_marks >= 60:
+            return "Your grade is: B"
+        elif avg_marks >= 50:
+            return "Your grade is: C"
+        else:
+            return "Your grade is: F"
+          
+marks = [ 40,50,30,40,68]
+print(compute_grade1(marks))
